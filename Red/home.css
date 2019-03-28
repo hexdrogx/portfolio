@@ -1,0 +1,139 @@
+{
+ box-sizing: border-box;
+}
+
+body {
+ font-family: Arial;
+ padding: 10px;
+ background: #006B2A;
+}
+
+
+.header {
+ padding: 30px;
+ text-align: center;
+ background: white;
+}
+
+.header h1 {
+  color: #CAE2E8;
+ font-size: 50px;
+}
+
+.sidenav {
+ height: 100%;
+ width: 0;
+ position: fixed;
+ z-index: 1;
+ top: 0;
+ left: 0;
+ background-color: #111;
+ overflow-x: hidden;
+ transition: 0.5s;
+ padding-top: 60px;
+}
+
+.sidenav a {
+ padding: 8px 8px 8px 32px;
+ text-decoration: none;
+ font-size: 25px;
+ color: #818181;
+ display: block;
+ transition: 0.3s;
+}
+
+.sidenav a:hover {
+ color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+ position: absolute;
+ top: 0;
+ left: 25px;
+ font-size: 36px;
+ margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+ .sidenav {padding-top: 15px;}
+ .sidenav a {font-size: 18px;}
+}
+
+
+.leftcolumn {
+ float: left;
+ width: 73.91%;
+}
+
+
+.rightcolumn {
+ float: left;
+ width: 25%;
+ background-color: #006B2A;
+ padding-left: 20px;
+}
+
+
+.firstimg {
+ background-color: #aaa;
+ width: 30%;
+ padding: 150px;
+ background-image: url("./images/Capture2.png");
+}
+
+.secimg {
+ background-color: #aaa;
+ width: 50%;
+ padding: 150px;
+ background-image: url("./images/Capture2.png");
+}
+
+.card {
+ background-color: white;
+ padding: 20px;
+ margin-top: 20px;
+}
+
+
+.row:after {
+ content: "";
+ display: table;
+ clear: both;
+}
+
+
+.footer {
+ padding: 20px;
+ text-align: center;
+ background: #ddd;
+ margin-top: 20px;
+}
+
+@media screen and (max-width: 800px) {
+ .leftcolumn, .rightcolumn {
+   width: 100%;
+   padding: 0;
+ }
+}
+
+
+@media screen and (max-width: 400px) {
+ .topnav a {
+   float: none;
+   width: 100%;
+ }
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
