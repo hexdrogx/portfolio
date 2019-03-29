@@ -1,0 +1,67 @@
+body {
+  background-color:#006B2A;
+  font-family:sans-serif;
+  color: white;
+  text-align: center
+}
+
+#about {
+font-family: cursive;
+color: yellow;
+}
+
+h1 {
+  color: #CAE2E8;
+}
+
+ul {
+  list-style-position: inside;
+}
+
+#image {
+  background-image: url("./images/hexdro.jpg");
+  width: 1900px;
+  height: 800px;
+  background-size: contain;
+}
+
+#backimg {
+  background-image: url("./images/p1.jpg");
+  width: 50%
+  height: 1000
+}
+
+button {
+  color:white;
+  height:75px;
+  width:175px;
+  background-color:#1820FF;
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: red;
+}
+
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: red;
+}

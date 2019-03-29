@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./home.css">
+<link rel="javascript" href="./home.js">
+</head>
+<body>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="./home.html">home and hacking</a>
+  <a href="./red.html">my first site</a>
+</div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; sites</span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+<div class="header">
+  <h1>My new site</h1>
+  <p>yeah this is just to show case a little what i can do.</p>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>google</h2>
+      <h5>did you know you could extract code from drive and google sites by f12 or the code editing function.</h5>
+      <div class="firstimg" style="height:150px;">Image</div>
+    </div>
+    <div class="card">
+      <h2>pokemon</h2>
+      <h5>have you seen the new games yet</h5>
+      <div class="secimg" style="height:100px;"></div>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <h5>look at my first site to learn more about me<h5>
+      <div class="tutimg" style="height:100px;"></div>
+      <p>i like turtles</p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <h5>this is my drawing<h5>
+      <div class="popimg" style="height:100px;"></div>
+      <p>look me up on amino</p>
+    </div>
+    <div class="card">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <h3>sub to Me</h3>
+      <p>and pudypie</p>
+      <a href="https://www.youtube.com/channel/UCQqhS5dJkUgjWecIWpDZjZg/videos" class="fa fa-youtube"></a>
+    </div>
+  </div>
+</div>
+</body>
+</html>

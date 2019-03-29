@@ -1,0 +1,86 @@
+body {
+ font-family: Arial;
+ padding: 10px;
+ background: #000000;
+ color: #00FF00;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #00FF00;
+  border-radius: 4px;
+  box-sizing: border-box;
+  border-color: #00FF00;
+  color: #00FF00;
+  background-color: black;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #00FF00;
+  color:  #00FF00;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border:  #00FF00;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #00FF00;
+  color:  #00FF00;
+
+}
+
+div {
+  border-radius: 5px;
+  background-color: #000000;
+  padding: 20px;
+
+}
+
+.button {
+  border-radius: 4px;
+  background-color:  #00FF00;
+  border: none;
+  color:  #00FF00;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+background {
+  color: #000000;
+}
