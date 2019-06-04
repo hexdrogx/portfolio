@@ -1,0 +1,74 @@
+'---------------
+#org 0x81C5B4
+lock
+faceplayer
+setvar 0x8008 0x0
+call 0x81A8CAD
+checkflag 0x248
+if 0x1 goto 0x816F674
+msgbox 0x881C671 MSG_YESNO '"Hahaha!\pI caught the last LARVEST..."
+compare LASTRESULT 0x0
+if 0x1 goto 0x816F65C
+call 0x81A8CBD
+compare 0x8004 0x6
+if 0x4 goto 0x816F65C
+call 0x81A8CC9
+comparevars LASTRESULT 0x8009
+if 0x5 goto 0x816F666
+call 0x81A8CD9
+msgbox 0x81A59DA MSG_KEEPOPEN '"!"
+setflag 0x248
+release
+end
+
+
+
+
+
+
+
+'---------------
+#org 0x1A8CFC
+call 0x81BBB6A
+end
+
+'---------------
+#org 0x1BBB6A
+lock
+faceplayer
+checkflag 0x829
+if 0x0 goto 0x81BB877
+msgbox 0x81BDB85 MSG_YESNO '"Hello, [player]!\pIt's me, TEALA, ..."
+compare LASTRESULT 0x0
+if 0x1 goto 0x81BBB92
+msgbox 0x81BDBF8 MSG_KEEPOPEN '"Let me explain how the POKéMON\nWI..."
+release
+return
+
+'---------------
+#org 0x1BB877
+msgbox 0x81A561A MSG_KEEPOPEN '"I'm terribly sorry.\nThe POKéMON W..."
+release
+end
+
+'---------------
+#org 0x1BBB92
+msgbox 0x81BDEDF MSG_KEEPOPEN '"I hope you enjoy the Wireless\nCom..."
+release
+return
+
+
+'---------
+' Strings
+'---------
+#org 0x1BDB85
+= Hello, [player]!\pIt's me, TEALA, the POKéMON\nCENTER 2F attendant.\pIs there something you needed to\nask me about linking?
+
+#org 0x1BDBF8
+= Let me explain how the POKéMON\nWIRELESS CLUB works.\pOn this, the top floor, there are\ntwo rooms.\pFirst, the room on the left.\nIt's the UNION ROOM.\pYou may link up with TRAINERS\naround you who have also entered\lthe UNION ROOM.\pWith them, you may do things like\nchat, battle, and trade.\pSecond, the room on the right is\nthe DIRECT CORNER.\pYou may trade or battle POKéMON\nwith your friends in this room.\pSometimes, you may not be able to\nfind your friends in the UNION ROOM\lor the DIRECT CORNER.\pIn that case, please move closer\nto your friends.\pIf the Wireless Adapter isn't\nconnected, you may still link up\lusing a GBA Game Link cable.\pIf that is the case, you must go\nto the DIRECT CORNER.\pI hope you enjoy the Wireless \nCommunication System.
+
+#org 0x1A561A
+= I'm terribly sorry.\nThe POKéMON WIRELESS CLUB is\lundergoing adjustments now.
+
+#org 0x1BDEDF
+= I hope you enjoy the Wireless\nCommunication System.
